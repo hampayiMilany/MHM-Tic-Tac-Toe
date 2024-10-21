@@ -1,0 +1,129 @@
+.start-menu-container {
+    width: 450px;
+    height: 600px;
+    background-color: var(--bg-color);
+    border-radius: 50px;
+    box-shadow: 0 0 15px #000;
+    border: 3px solid #31C4BE;
+    padding: 20PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.welcome {
+    font-family: MontserratBold, sans-serif;
+    margin: 20px 0 10px;
+    font-size: 1.3em;
+}
+
+.game-title {
+    font-family: MontserratBold, sans-serif;
+    margin-bottom: 50px;
+}
+
+.who-is-first-container {
+    width: 90%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #223945;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px #101a20;
+    box-sizing: border-box;
+    font-family: MontserratBold, sans-serif;
+}
+
+.toggle-button {
+    height: 60px;
+    width: 90%;
+    background-color: var(--bg-color);
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+
+    .image-container {
+        width: 50%;
+        height: 100%;
+        display: inherit;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .toggle-btn-background {
+        background-color: #1F3540;
+        border-radius: 5px;
+        width: 50%;
+        height: 75%;
+        position: absolute;
+    }
+}
+
+.start-game-buttons-container {
+    width: 90%;
+    margin: 40px 0;
+    gap: 10px;
+
+    button {
+        width: 100%;
+        padding: 15px 20px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        border-radius: 10px;
+        font-family: MontserratBold, sans-serif;
+        font-size: 1.1em;
+
+        /* Disable blue highlight on button click */
+        -webkit-tap-highlight-color: transparent;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    button:nth-child(1) {
+        background-color: var(--color1);
+        box-shadow: 0 5px var(--color1-shadow);
+        border: 0 solid transparent;
+    }
+
+    button:nth-child(2) {
+        background-color: var(--color2);
+        box-shadow: 0 5px var(--color2-shadow);
+        border: 0 solid transparent;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .start-menu-container {
+        overflow-y: scroll;
+        max-height: 80vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .start-menu-container {
+        border: 0 solid transparent;
+        width: 85vw;
+        height: 85vh;
+        box-shadow: 0 0 #00000000;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    .start-game-buttons-container {
+        button {
+            font-size: 0.8em;
+        }
+    }
+
+}
