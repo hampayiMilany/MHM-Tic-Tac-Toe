@@ -16,3 +16,30 @@ Welcome to MHM Tic-Tac-Toe, an immersive online Tic-Tac-Toe experience crafted w
 - **HTML5 & CSS3** - Markup and styling for structuring and designing the game
 - **Node.js & npm** - Environment and package manager for managing dependencies
 - **Webpack/Babel** - Tools for bundling and transpiling modern JavaScript
+
+## Getting Started 🚀
+
+To get started with the project, follow these steps:
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone [repository-url]
+   ```
+
+2. **Navigate to the project directory**:
+
+   ```bash
+   cd MHM-Tic-Tac-Toe
+   ```
+
+3. **Install the dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+4. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
